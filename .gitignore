@@ -1,0 +1,5 @@
+'pycache/*'
+workspace.xml
+.idea/
+clothing_company.db
+__pycache__/

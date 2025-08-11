@@ -1,0 +1,62 @@
+Level 4 University Assignment to create an application to the following specification:
+Scenario:
+Every business needs a mechanism to manage and track its transactions, which should be robust and efficient. You are hired by a new high-street clothing brand to develop software that manages and tracks every transaction. You are required to develop an interactive application (software) that enables the user, admin staff, and sales staff to have login access to the application by using email and password registration that will be saved in their corresponding databases. Their login has limited permissions as the following:
+
+User Login Permissions:
+-User should be able to enter item code or item name to select a specific item;
+-There can be multiple items in a single purchase;
+-Every transaction should generate a receipt with the a unique QR code;
+-User should be able to view the quantity of a specific item, along with the entire inventory;
+-User should be able to retrieve an old transaction by either entering receipt number or by scanning the generated QR code;
+-User should be able to return a purchased item. Any item returned should be added to the inventory and a return receipt should be generated.
+
+Admin Login Permissions:
+-Add/Remove/Edit Items;
+-Check and Review Sales Data and Reports;
+-Generate Reports;
+-Track Most Popular Items;
+-Apply Offers on Specific Items;
+-Track Inventory;
+-Add/Remove Sales Staff.
+
+Sales Staff Login Permissions:
+-Check Available Items;
+-Make Invoice;
+-Return Items.
+The software should have a backend SQLite database that contains the registered users, admin staff, and sales staff. Also, the database should have all the items in store with their corresponding code, name, quantity, and quantity left. In addition, the database should save the reference number of all transactions made.
+
+QR code of generated purchase or return receipts should be saved in the local directory of your developed software (application)
+
+--------------------------
+
+To setup and test the application:
+--------------------------
+Pre-Requisites:
+Interpreter: Python 3.10
+Required libraries:
+qrcode
+Pillow
+fpdf
+bcrypt
+opencv-python
+pandas
+pandastable
+matplotlib
+pyautogui
+tkcalendar
+--------------------------
+Setup Process:
+Run setup.py
+When prompted to set up for demonstration mode type Y
+Setup takes under 1 minutes
+Once setup has completed, run uogclothing.py to start the application
+--------------------------
+Account access:
+User Type	Email Address	Password
+Standard	standard.user@uogclothing.com	123
+Sales	sales.user@uogclothing.com	123
+Admin	admin.user@uogclothing.com	123
+--------------------------
+All randomly created user accounts can be viewed through the admin login in the user management section. All randomly created accounts also use 123 as the password.
+--------------------------
+If setup fails to create the database for any reason, the clothing_company.db database in the backup_database folder can be copied into the main application folder.
